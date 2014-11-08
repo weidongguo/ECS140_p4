@@ -1,4 +1,4 @@
-// the SeqIt base interface
+// the SeqIt base interface  ==> for make an iterator
 
 public interface SeqIt {
     // any more elements?
