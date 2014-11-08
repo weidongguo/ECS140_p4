@@ -17,7 +17,7 @@ public class JumbleIt implements SeqIt {
       count++;
       return ref[count-1];//-1 because i increment is done first
     }
-    System.err.println("Jumble out of bound");
+    System.err.println("JumbleIt called past end");
     System.exit(1);
     return 0;
   }

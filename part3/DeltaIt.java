@@ -16,7 +16,7 @@ public class DeltaIt implements SeqIt {
       count++; //visited one element in the sequence
       return initial + (delta * (count - 1)); //-1 since initial is the first ele 
     }
-    System.err.println("Delta out of bound");
+    System.err.println("DeltaIt called past end");
     System.exit(1);
     return 0;
   }

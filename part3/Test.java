@@ -7,7 +7,7 @@ public class Test {
     Delta d = new Delta(3, 0, 2);
     System.out.println(d + "\n" + d.min());
     
-    int []ref = {-9,3,-3,5,7,19,-2, 1, 2, 3 , 4};
+    int []ref = {5, 6, 7, 1, 2, 2, 3, 2, 4, 5, 6, 9, 0, 0, 3};
 
     Jumble j = new Jumble( ref);
     
@@ -31,8 +31,9 @@ public class Test {
     for(; ji.hasNext() ;){
       System.out.println(ji.next());
     }
-    ji.next();
+    
+    System.out.println("-----------JumbleUser----------"); 
+    System.out.println(JumbleUser.lengthLongestNDCSS1(j));
+
   }
-
-
 }

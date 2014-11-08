@@ -15,7 +15,7 @@ public class ConstantIt implements SeqIt{
       count++;
       return value;
     }
-    System.err.println("Constant out of bound");
+    System.err.println("ConstantIt called past end");
     System.exit(1);
     return 0;
   }
