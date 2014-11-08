@@ -27,6 +27,8 @@ public class Delta extends Seq {
   public SeqIt createSeqIt() {
     return new DeltaIt(this);
   }
-
+  public int getSize() {
+    return num;
+  }
 
 }

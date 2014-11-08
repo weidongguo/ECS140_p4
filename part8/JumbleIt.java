@@ -1,15 +1,15 @@
 public class JumbleIt implements SeqIt {
   protected int ref[]; //reference to the actual sequnce (array)
-  protected int length, count;
+  protected int num, count;
 
   JumbleIt(Jumble s) {
     ref = s.values;//set the reference to values;
-    length =  s.count; // s.count is the length of the array values[]
+    num =  s.num; // s.count is the length of the array values[]
     count = 0;
   }
 
   public boolean hasNext() {
-    return count < length; 
+    return count < num; 
   }
 
   public int next() throws UsingIteratorPastEndException {

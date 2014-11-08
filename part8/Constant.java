@@ -25,5 +25,7 @@ public class Constant extends Seq {
     return new ConstantIt(this); 
   }
 
-
+  public int getSize() {
+    return num;
+  }
 }

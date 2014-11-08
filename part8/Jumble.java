@@ -1,20 +1,20 @@
 public class Jumble extends Seq {
-  protected int values[], count; //# of elements in the array Values[];
+  protected int values[] , num; //# of elements in the array Values[];
   Jumble(int []values) {
-    count = 0; 
+    num = 0; 
     for( int i  : values) //count how many elements is in the array passed in
-      count++;
+      num++;
 
-    this.values = new int[count];
-    for( int i = 0; i < count; ++i) //doing what System.arraycopy() does
+    this.values = new int[num];
+    for( int i = 0; i < num; ++i) //doing what System.arraycopy() does
       (this.values)[i] = values[i];
     
-    //System.arraycopy(values, 0 , this.values, 0, count);
+    //System.arraycopy(values, 0 , this.values, 0, num);
   }
 
   public String toString() {
-    String str = "{ " + count + " :";
-    for( int i = 0 ; i < count; ++i) 
+    String str = "{ " + num + " :";
+    for( int i = 0 ; i < num; ++i) 
       str = str + " " + values[i];
     str = str + " }"; 
 
@@ -22,7 +22,7 @@ public class Jumble extends Seq {
   }
 
   public int min () {
-    if(count == 0)
+    if( num == 0)
       return 0;
     int min = values[0]; 
     for(int elem : values) {
@@ -36,6 +36,10 @@ public class Jumble extends Seq {
                                // to actual implementation of the abstract methods
                                // from SeqIt
     return new JumbleIt(this);
+  }
+
+  public int getSize() { 
+    return num;
   }
 
 }
