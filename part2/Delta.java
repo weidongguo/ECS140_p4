@@ -16,5 +16,13 @@ public class Delta extends Seq {
     /* some screen display '&' like  delta sign */
   }
 
+  public int min() {
+    if(num == 0)
+      return 0;
+    if(delta < 0)
+      return initial+(delta*(num-1));//num-1 since initial is one of the num too
+    return initial;
+}
+
 
 }
