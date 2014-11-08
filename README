@@ -1,20 +1,6 @@
-*** fill in the following;
-*** repeat it for each group member;
-*** list group members alphabetically by last name
-
 Guo
 Weidong
 weidongg
-
-
-Name(last): xxxx
-Name(first): xxxx
-Login_ID: xxxxx
-
-
-
-
-*** Give the status of your work; here's a sample.
 
 Status:
 
@@ -22,9 +8,9 @@ part1: Works on all tests.
 part2: Works on all tests.
 part3: Works on all tests.
 part4: Works on all tests.
-part5: Works on only the first test case.
-part6: Didn't attempt.
-part7: Didn't attempt.
-part8: Didn't attempt.
+part5: 
+part6: 
+part7:
+part8: 
 
 Overall: Any comment/discussion related to this HW.
